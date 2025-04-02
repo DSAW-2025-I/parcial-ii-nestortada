@@ -1,4 +1,32 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/CBIH3_Lj)
+
+# Nombre: Nestor Andres Tabares David
+# Links
+## Status 200 ok Ver todos los Productos: 
+[https://parcial-ii-nestortada.vercel.app/products](https://parcial-ii-nestortada.vercel.app/products)
+## Status 200 ok Ver el producto por el ID
+[https://parcial-ii-nestortada.vercel.app/products/1](https://parcial-ii-nestortada.vercel.app/products/1)
+## Status 404 Not Found ver un producto que no existe
+[https://parcial-ii-nestortada.vercel.app/products/1000000](https://parcial-ii-nestortada.vercel.app/products/1000000)
+## Crear un nuevo producto 
+```javascript
+fetch('https://parcial-ii-nestortada.vercel.app/products', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    id: 4,
+    name: 'Jamon',
+    price: 12.99
+  })
+})
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+```
+poner esta parte de codigo en la consola 
+
 # Web Development Exam - Backend with Express.js
 
 ## Overview
